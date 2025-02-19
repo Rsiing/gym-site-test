@@ -1,4 +1,5 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+it is a test for a gym website i'm working on that offers a large selection of fitness tools that are easily assesible to users
 
 ## Getting Started
 
