@@ -2,20 +2,20 @@
 import Image from "next/image";
 
 
-import Navbar from "./Navbar";
+import NavDash from "./NavDash";
 
 export default function Home() {
   return (
     <div>
-        <Navbar />
+        <NavDash />
       <main className="h-full px-20 pt-40 pb-20 cursor-default duration-300">
         <div className="w-full h-full rounded-xl bg-[#282828] border-4
           border-[#353535] flex flex-col shadow-lg">
 
-          <div className="lg:text-8xl md:text-6xl text-4xl lg:self-start self-center font-bold text-white pt-10 px-10">
+          <div className="lg:text-8xl md:text-6xl text-4xl font-bold text-white pt-10 px-10">
             <h1>
                 Welcome to 
-              <span className="flex text-[#6c63ff] lg:text-9xl md:text-7xl lg:left-20 lg:justify-self-start justify-self-center text-5xl relative top-2">
+              <span className="flex text-[#000000] lg:text-9xl md:text-7xl text-5xl relative left-20 top-2">
                 GymFit
               </span>
             </h1>
@@ -30,7 +30,7 @@ export default function Home() {
               to build strength, lose weight, increase endurance, or simply
               stay active, we have everything you need to achieve your goals.
             </h2>
-            <Image src="/heroImg.svg" alt="" className='self-center relative lg:bottom-18 bottom-0' width={1000} height={500}/>
+            <Image src="/heroImg.svg" alt="" className='self-center' width={1000} height={500}/>
           </div> 
 
           <div className="flex flex-col self-center">
