@@ -60,13 +60,13 @@ const Navbar: React.FC = () => {
             />
             <div>
               <ul className="flex items-center space-x-4">
-                <li className="flex items-center cursor-pointer" onClick={() => router.push("/login")}>
+                <li className="flex items-center cursor-pointer" onClick={() => router.push("/Login")}>
                   Login
                 </li>
                 <li 
                   className="bg-white text-[#282828] rounded-lg px-4 py-1 
                   hover:bg-[#6c63ff] hover:text-white duration-300 cursor-pointer"
-                  onClick={() => router.push("/register")} 
+                  onClick={() => router.push("/Register")} 
                 >
                   Sign up
                 </li>
@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
 
       
       {isOpen && screenWidth <= 768 && (
-        <div className="absolute top-20 left-0 w-full bg-[#282828] flex flex-col items-center text-xl font-bold py-4 cursor-pointer">
+        <div className="absolute top-20 left-0 w-full bg-[#282828] border-b-4 border-[#353535] flex flex-col items-center text-xl font-bold py-4 cursor-pointer">
           <ul className="w-full flex flex-col items-center space-y-4">
             {["Home", "About", "Services", "Contact"].map((item) => (
               <li key={item} className="py-2 hover:opacity-70 hover:underline duration-300">{item}</li>

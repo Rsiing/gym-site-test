@@ -7,7 +7,13 @@ import { useRouter } from "next/navigation";
 const NavDash: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState(1024);
-  const router = useRouter(); 
+  const router = useRouter();
+
+  const handleLogout = () => {
+    localStorage.removeItem("token"); // Remove auth token (if used)
+    sessionStorage.removeItem("user"); // Clear user session
+    router.push("/"); // Redirect to homepage or login
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -43,7 +49,7 @@ const NavDash: React.FC = () => {
         {screenWidth > 768 ? (
           <ul className="flex space-x-8">
             <li className="flex items-center cursor-pointer hover:text-[#6c63ff] duration-300" 
-            onClick={() => router.push("/Login")}>
+            onClick={handleLogout}>
               Logout
             </li>
             <li 
@@ -62,15 +68,14 @@ const NavDash: React.FC = () => {
             <div>
               <ul className="flex items-center space-x-4">
                 <li className="flex items-center cursor-pointer" 
-                onClick={() => router.push("/login")}>
-                  Login
+                onClick={handleLogout}>
+                  Logout
                 </li>
                 <li 
-                  className="bg-white text-[#282828] rounded-lg px-4 py-1 
+                  className="bg-white text-[#282828] rounded-lg px-4 py-2 
                   hover:bg-[#6e3758] hover:text-white duration-300 cursor-pointer"
-                  onClick={() => router.push("/register")} 
-                >
-                  Sign up
+                  onClick={() => router.push("/register")}>
+                  My account
                 </li>
               </ul>
             </div>
@@ -80,10 +85,10 @@ const NavDash: React.FC = () => {
 
      
       {isOpen && screenWidth <= 768 && (
-        <div className="absolute top-20 left-0 w-full bg-[#282828] flex flex-col items-center text-xl font-bold py-4 cursor-pointer">
+        <div className="absolute top-20 left-0 w-full bg-[#282828] border-b-4 border-[#353535] flex flex-col items-center text-xl font-bold py-4 cursor-pointer">
           <ul className="w-full flex flex-col items-center space-y-4">
             {["Home", "About", "Services", "Contact"].map((item) => (
-              <li key={item} className="py-2 hover:opacity-70 hover:underline duration-300">{item}</li>
+              <li key={item} className="py-2 hover:opacity-70 hover:underline duration-300 ">{item}</li>
             ))}
           </ul>
         </div>
