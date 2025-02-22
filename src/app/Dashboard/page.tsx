@@ -62,7 +62,7 @@ export default function Home() {
           >
             {!isFlipped["whatsNew"] ? (
               <div className="relative w-full h-[500px]">
-                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
               <h1 className="text-6xl md:text-5xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white hover:bg-[#6c63ff] duration-300 rounded-xl px-8 py-4 text-center text-[#282828] hover:text-white font-bold">
                 Whats New
               </h1>
@@ -70,7 +70,7 @@ export default function Home() {
             ) : (
               <div className=" w-full h-[500px] flex flex-col justify-center items-center absolute top-0 left-0 "
               style={{transform: spinCard ? 'rotateY(180deg)' : 'rotateY(0)'}}>
-                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
                   <p className="p-12 text-lg lg:text-xl xl:text-2xl text-center text-white bg-[#6c63ff]">
                   We've been working hard to bring you the best fitness experience possible, 
                   and we're thrilled to introduce a brand-new set of tools and features 
@@ -94,9 +94,9 @@ export default function Home() {
               <h1 className="text-5xl md:text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white hover:bg-[#6c63ff] duration-300 rounded-xl px-8 py-4 text-center text-[#282828] hover:text-white font-bold">
                 Health Tracker
               </h1>
-              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
               <Image 
-                src="/tracker.svg" 
+                src="/health.svg" 
                 alt="Meal Planner" 
                 className="w-full h-full object-cover absolute top-0 left-0"
                 width={0}
@@ -105,9 +105,9 @@ export default function Home() {
             ) : (
               <div className="relative w-full h-[500px]"
               style={{transform: spinCard ? 'rotateY(180deg)' : 'rotateY(0)'}}>
-                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
                 <Image 
-                  src="/tracker.svg" 
+                  src="/health.svg" 
                   alt="Health Tracker" 
                   className="w-full h-full object-cover absolute top-0 left-0"
                   width={0}
@@ -137,7 +137,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white hover:bg-[#6c63ff] duration-300 rounded-xl px-8 py-4 text-center text-[#282828] hover:text-white font-bold">
                 Meal Planner
               </h1>
-              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
               <Image 
                 src="/meals.svg" 
                 alt="Meal Planner" 
@@ -149,7 +149,7 @@ export default function Home() {
             ) : (
               <div className="relative w-full h-[500px]"
               style={{transform: spinCard ? 'rotateY(180deg)' : 'rotateY(0)'}}>
-                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
                 <Image 
                   src="/meals.svg" 
                   alt="Health Tracker" 
@@ -183,7 +183,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white hover:bg-[#6c63ff] duration-300 rounded-xl px-8 py-4 text-center text-[#282828] hover:text-white font-bold">
                 workout Library
               </h1>
-              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
               <Image 
                 src="/workout.svg" 
                 alt="Meal Planner" 
@@ -194,7 +194,7 @@ export default function Home() {
             ) : (
               <div className="relative w-full h-[500px]"
               style={{transform: spinCard ? 'rotateY(180deg)' : 'rotateY(0)'}}>
-                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
                 <Image 
                   src="/workout.svg" 
                   alt="Health Tracker" 
@@ -226,7 +226,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white hover:bg-[#6c63ff] duration-300 rounded-xl px-8 py-4 text-center text-[#282828] hover:text-white font-bold">
                 Challenges and leaderboards
               </h1>
-              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
               <Image 
                 src="/challenge.svg" 
                 alt="Meal Planner" 
@@ -237,7 +237,7 @@ export default function Home() {
             ) : (
               <div className="relative w-full h-[500px]"
               style={{transform: spinCard ? 'rotateY(180deg)' : 'rotateY(0)'}}>
-                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
                 <Image 
                   src="/challenge.svg" 
                   alt="Health Tracker" 
@@ -269,7 +269,7 @@ export default function Home() {
               <h1 className="text-5xl md:text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-white hover:bg-[#6c63ff] duration-300 rounded-xl px-8 py-4 text-center text-[#282828] hover:text-white font-bold">
                 Any questions
               </h1>
-              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+              <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
               <Image 
                 src="/questions.svg" 
                 alt="Meal Planner" 
@@ -280,7 +280,7 @@ export default function Home() {
             ) : (
               <div className="relative w-full h-[500px]"
               style={{transform: spinCard ? 'rotateY(180deg)' : 'rotateY(0)'}}>
-                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
+                <FaArrowRotateRight className="absolute top-4 right-4 z-10 text-white hover:text-[#6c63ff] text-5xl hover:rotate-180 duration-300"/>
                 <Image 
                   src="/questions.svg" 
                   alt="Health Tracker" 

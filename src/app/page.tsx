@@ -1,46 +1,59 @@
 "use client"; 
 import Image from "next/image";
-
+import Carousel from "./Carousel";
 
 import Navbar from "./Navbar";
 
 export default function Home() {
   return (
     <div>
-        <Navbar />
-      <main className="h-full px-20 pt-40 pb-20 cursor-default duration-300">
-        <div className="w-full h-full rounded-xl bg-[#282828] border-4
-          border-[#353535] flex flex-col shadow-lg">
-
-          <div className="lg:text-8xl md:text-6xl text-4xl lg:self-start self-center font-bold text-white pt-10 px-10">
-            <h1>
-                Welcome to 
-              <span className="flex text-[#6c63ff] lg:text-9xl md:text-7xl lg:left-20 lg:justify-self-start justify-self-center text-5xl relative top-2">
+      <Navbar />
+      <main className="h-full px-10 lg:px-20 pt-40 pb-20 cursor-default duration-300">
+        <div className="w-full relative rounded-xl bg-[#282828] border-4 border-[#353535] flex flex-col shadow-xl overflow-hidden">
+          
+          
+          <div className="relative z-20 flex flex-col items-center text-center lg:items-start lg:text-left px-10 lg:px-20 py-16">
+            
+            
+            <h1 className="text-white font-extrabold text-4xl md:text-6xl lg:text-8xl py-4 md:py-10">
+              Welcome to  
+              <span className="block text-[#6c63ff] text-5xl md:text-7xl lg:text-9xl mt-2">
                 GymFit
               </span>
             </h1>
+
+            
+            <h2 className="text-md md:text-xl lg:text-2xl xl:text-3xl text-white mt-6 max-w-3xl py-4 md:py-10">
+              At GymFit, we believe fitness is for everyone. Whether you're 
+              building strength, losing weight, increasing endurance, or 
+              staying active, we provide everything you need to achieve your goals.
+            </h2>
+
+           
+            <div className="flex justify-end right-100 relative w-full ">
+              <Carousel/>
+            </div>
+
+            
+            <div className="mt-10 py-4 relative lg:left-20 md:py-10">
+              <a 
+                href="/Register" 
+                className="font-bold text-lg md:text-4xl px-8 py-4 rounded-full shadow-lg bg-white text-[#282828] 
+                hover:bg-[#6c63ff] hover:text-white hover:scale-110 duration-300 inline-block"
+              >
+                Get started today
+              </a>
+            </div>
           </div>
 
-          <div className="self-center grid lg:grid-cols-2 md:grid-cols-1 py-20 px-20">
-            <h2 className="xl:text-4xl lg:text-2xl md:text-xl lg:justify-self-start 
-            justify-self-center lg:text-start text-center text-md self-center w-4/5 
-            lg:pb-0 pb-6"> 
-              At GymFit, we believe that fitness is for everyone, 
-              no matter where you are on your journey. Whether you're looking
-              to build strength, lose weight, increase endurance, or simply
-              stay active, we have everything you need to achieve your goals.
-            </h2>
-            <Image src="/heroImg.svg" alt="" className='self-center relative lg:bottom-18 bottom-0' width={1000} height={500}/>
-          </div> 
-
-          <div className="flex flex-col self-center">
-            <h3 className="h-200 lg:text-6xl md:text-4xl text-2xl flex flex-col self-center px-5 pb-20">
-              <a href="/Register" className="flex self-center font-bold cursor-pointer 
-                bg-white text-[#282828] hover:bg-[#6c63ff] hover:scale-105
-                hover:text-white duration-500 w-fit py-6 px-8 rounded-full shadow-lg">
-                  Get started today
-              </a>
-            </h3>
+         
+          <div className="absolute inset-0 z-1">
+            <Image 
+              src="/heroImg.svg" 
+              alt="Gym background" 
+              className="w-full h-full object-cover opacity-20 "
+              layout="fill"
+            />
           </div>
         </div>
       </main>
