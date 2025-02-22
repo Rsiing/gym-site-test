@@ -1,6 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 it is a test for a gym website i'm working on that offers a large selection of fitness tools that are easily assesible to users
-20/02/25- Worked on interactive cards for account user dashboard. debugged issue with login and register button on smaller screen size
+20/02/25- Worked on interactive cards for account user dashboard. debugged issue with login and register button on smaller screen size.
+21/02/25- Rework of cards on member dashboard to ensure uniformity and a greater user experience.
 
 ## Getting Started
 
