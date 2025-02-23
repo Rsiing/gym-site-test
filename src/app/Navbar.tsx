@@ -20,6 +20,13 @@ const Navbar: React.FC = () => {
     }
   }, []);
 
+  const navLinks = {
+    Home: "/",
+    About: "./About",
+    Services: "./services",
+    Contact: "./contact",
+  };
+
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
@@ -32,13 +39,20 @@ const Navbar: React.FC = () => {
 
       {screenWidth > 768 && (
         <ul className="lg:text-2xl text-xl font-bold flex space-x-8 cursor-pointer">
-          {["Home", "About", "Services", "Contact"].map((item) => (
-            <li key={item} className="hover:opacity-70 hover:underline duration-300 ">{item}</li>
-          ))}
-        </ul>
+        {Object.entries(navLinks).map(([label, path]) => (
+          <li
+            key={label}
+            onClick={() => router.push(path)}
+            className="hover:opacity-70 hover:underline duration-300"
+          >
+            {label}
+          </li>
+        ))}
+      </ul>
+  
       )}
 
-      {/* Login & Register Section */}
+   
       <div className="lg:text-2xl text-xl font-bold flex items-center space-x-8 cursor-pointer">
         {screenWidth > 768 ? (
           <ul className="flex space-x-8">

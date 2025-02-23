@@ -10,9 +10,9 @@ const NavDash: React.FC = () => {
   const router = useRouter();
 
   const handleLogout = () => {
-    localStorage.removeItem("token"); // Remove auth token (if used)
-    sessionStorage.removeItem("user"); // Clear user session
-    router.push("/"); // Redirect to homepage or login
+    localStorage.removeItem("token");
+    sessionStorage.removeItem("user"); 
+    router.push("/"); 
   };
 
   useEffect(() => {
